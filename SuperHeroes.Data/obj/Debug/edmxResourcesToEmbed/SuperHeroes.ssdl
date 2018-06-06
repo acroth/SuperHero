@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SuperHeroesModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Characters">
+    <Key>
+      <PropertyRef Name="CharacterID" />
+    </Key>
+    <Property Name="CharacterID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Alias" Type="varchar" MaxLength="20" />
+    <Property Name="Description" Type="varchar" MaxLength="50" />
+    <Property Name="IsHero" Type="bit" />
+    <Property Name="IsVillan" Type="bit" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6013: The table/view 'SuperHeroes.dbo.CourseCharacters' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="CourseCharacters">
+          <Property Name="CourseID" Type="int" />
+          <Property Name="CharacterID" Type="int" />
+        </EntityType>-->
+  <EntityType Name="Courses">
+    <Key>
+      <PropertyRef Name="CourseID" />
+    </Key>
+    <Property Name="Name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Description" Type="varchar" MaxLength="50" />
+    <Property Name="DateTime" Type="datetime" Nullable="false" />
+    <Property Name="Location" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Capacity" Type="int" />
+    <Property Name="CourseID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+error 6004: The table 'SuperHeroes.dbo.CourseCharacters' is referenced by a relationship, but cannot be found.
+        <Association Name="FK_CourseCharacters_Characters" />-->
+  <!--Errors Found During Generation:
+error 6004: The table 'SuperHeroes.dbo.CourseCharacters' is referenced by a relationship, but cannot be found.
+        <Association Name="FK_CourseCharacters_Courses" />-->
+  <EntityContainer Name="SuperHeroesModelStoreContainer">
+    <EntitySet Name="Characters" EntityType="Self.Characters" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Courses" EntityType="Self.Courses" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

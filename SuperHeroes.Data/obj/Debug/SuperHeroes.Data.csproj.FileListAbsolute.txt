@@ -1,0 +1,10 @@
+c:\users\student\documents\visual studio 2015\Projects\SuperHeroes\SuperHeroes\SuperHeroes.Data\bin\Debug\SuperHeroes.Data.dll.config
+c:\users\student\documents\visual studio 2015\Projects\SuperHeroes\SuperHeroes\SuperHeroes.Data\bin\Debug\SuperHeroes.Data.dll
+c:\users\student\documents\visual studio 2015\Projects\SuperHeroes\SuperHeroes\SuperHeroes.Data\bin\Debug\SuperHeroes.Data.pdb
+c:\users\student\documents\visual studio 2015\Projects\SuperHeroes\SuperHeroes\SuperHeroes.Data\bin\Debug\EntityFramework.dll
+c:\users\student\documents\visual studio 2015\Projects\SuperHeroes\SuperHeroes\SuperHeroes.Data\bin\Debug\EntityFramework.SqlServer.dll
+c:\users\student\documents\visual studio 2015\Projects\SuperHeroes\SuperHeroes\SuperHeroes.Data\bin\Debug\EntityFramework.xml
+c:\users\student\documents\visual studio 2015\Projects\SuperHeroes\SuperHeroes\SuperHeroes.Data\bin\Debug\EntityFramework.SqlServer.xml
+c:\users\student\documents\visual studio 2015\Projects\SuperHeroes\SuperHeroes\SuperHeroes.Data\obj\Debug\SuperHeroes.Data.csprojResolveAssemblyReference.cache
+c:\users\student\documents\visual studio 2015\Projects\SuperHeroes\SuperHeroes\SuperHeroes.Data\obj\Debug\SuperHeroes.Data.dll
+c:\users\student\documents\visual studio 2015\Projects\SuperHeroes\SuperHeroes\SuperHeroes.Data\obj\Debug\SuperHeroes.Data.pdb
