@@ -38,7 +38,7 @@ body {font-family: 'Roboto', sans-serif;background: #fff;font-size: 16px;color: 
 .header .container {position: relative;z-index: 3}
 
 
-.social-links {text-align: right;margin-top: 40px}
+.social-links {text-align:inherit;margin-top: 40px}
 .social-links a.btn.social-link {
   background: #FAFAFA none repeat scroll 0 0;
   border-radius: 50%;
@@ -444,7 +444,36 @@ body {font-family: 'Roboto', sans-serif;background: #fff;font-size: 16px;color: 
     text-transform: uppercase;
 }
 
+/*Custom CSS*/
 
 #particles canvas {
     background: url('../img/header-bg.jpg') no-repeat fixed;
+}
+
+.social-links {
+    text-align:inherit !important;
+}
+.navbar-nav>li>a{
+    color:white;
+}
+
+.navbar-nav>li>a :hover {
+    color: white;
+    background-color:#E2413A;
+}
+
+#flash {
+    margin-left: 7%;
+}
+
+.btn{
+    background-color:#E2413A;
+    color:white;
+    
+
+}
+
+.btn:hover{
+    background-color: green;
+    color: #E2413A
 }

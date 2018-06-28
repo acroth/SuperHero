@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SuperHeroes.Data.MetaData
+namespace SuperHeroes.Data//.MetaData
 {
     [MetadataType(typeof(CoursMetadata))]
     public partial class Cours { }
@@ -15,6 +15,7 @@ namespace SuperHeroes.Data.MetaData
         public string Name { get; set; }    
         public string Description { get; set; }
         [Required]
+        [Display (Name ="Date & Time")]       
         public System.DateTime DateTime { get; set; }
         [Required]
         public string Location { get; set; }

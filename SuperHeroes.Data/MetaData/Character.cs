@@ -11,6 +11,7 @@ namespace SuperHeroes.Data//.MetaData
     public partial class Character { }
     class CharacterMetadata
     {
+
         [Required]
         [Display(Name = "Character ID")]
         public int CharacterID { get; set; }

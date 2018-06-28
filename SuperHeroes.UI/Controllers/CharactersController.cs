@@ -15,6 +15,7 @@ namespace SuperHeroes.UI.Controllers
         private SuperHeroesEntities db = new SuperHeroesEntities();
 
         // GET: Characters
+        [AllowAnonymous]
         public ActionResult Index()
         {
             return View(db.Characters.ToList());
@@ -36,6 +37,7 @@ namespace SuperHeroes.UI.Controllers
         }
 
         // GET: Characters/Create
+        [Authorize]
         public ActionResult Create()
         {
             return View();
@@ -59,6 +61,7 @@ namespace SuperHeroes.UI.Controllers
         }
 
         // GET: Characters/Edit/5
+        [Authorize]
         public ActionResult Edit(int? id)
         {
             if (id == null)
@@ -90,6 +93,7 @@ namespace SuperHeroes.UI.Controllers
         }
 
         // GET: Characters/Delete/5
+        [Authorize]
         public ActionResult Delete(int? id)
         {
             if (id == null)
